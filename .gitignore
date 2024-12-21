@@ -1,3 +1,7 @@
 .venv/*
 .vscode/*
 *.pyc
+
+# setiap install package di pip harus diakhiri dengan:
+#  --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host=files.pythonhosted.org
+# jika error SSL
