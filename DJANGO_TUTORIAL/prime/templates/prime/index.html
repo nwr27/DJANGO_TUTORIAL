@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selamat Datang | {{judul}}</title>
+  </head>
+  <body>
+    <h1>Bilangan Prima</h1>
+    <p>Bilangan prima ini menggunakan Template Tag</p>
+    <p>Kontributor : {{subjudul}}</p>
+    <ul>
+      {% for link, name in nav%}
+        <li>
+          <a href="{{link}}" title="">{{name}}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h2>Urutan Bilangan Prima:</h2>
+    <ol>
+      {% for prime in primes %}
+        <li>{{ prime }}</li>
+      {% endfor %}
+    </ol>
+    
+  </body>
+</html>
