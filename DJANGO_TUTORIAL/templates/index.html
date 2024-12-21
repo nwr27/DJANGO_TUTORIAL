@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Selamat Datang | Kelas Terbuka</title>
+    <title>Selamat Datang | {{ judul }}</title>
   </head>
   <body>
-    <h1>Selamat datang di website ini</h1>
+    <h1>Selamat datang di website {{judul}}</h1>
     <p>Website ini dibuat menggunakan Django</p>
+    <p>Kontributor : {{subjudul}}</p>
     <ul>
       <li><a href="/about" title="">about</a></li>
       <li><a href="/blog" title="">blog</a></li>
